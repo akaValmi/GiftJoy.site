@@ -1,3 +1,23 @@
-<h1 class="text-3xl font-bold underline">
-	Hello world!
-  </h1>
+---
+import Banner from "../components/Banner.astro";
+import Services from "../components/Services.astro";
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Social from "../components/Social.astro";
+---
+
+<style>
+body {
+  background-color: rgb(235, 228, 218);
+}
+</style>
+
+<Layout title="Gift Joy">
+  <Banner />
+
+  <Services /> 
+
+  <Hero />
+
+  <Social />
+</Layout>

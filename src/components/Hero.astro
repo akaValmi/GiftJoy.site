@@ -1,0 +1,45 @@
+---
+interface ImgList {
+  url_img: string;
+}
+
+const imgList: ImgList[] = [
+  { url_img: '../../public/img-1.jpg' },
+  { url_img: '../../public/img-2.jpg' },
+  { url_img: '../../public/img-3.webp' },
+  { url_img: '../../public/img-4.jpg' },
+  { url_img: '../../public/img-5.jpg' },
+  { url_img: '../../public/img-6.jpg' }
+];
+---
+
+<section class="text-black body-font bg-yellow-200">
+    <div class="container mx-auto px-5 py-5">
+      <div class="flex flex-col items-center sm:flex-row">
+        <div class="lg:flex-grow text-center md:text-left mb-16 md:mb-0">
+            <h1 class="title-font tracking-wide sm:text-3xl md:text-6xl xl:text-7xl mb-4 font-bold">
+                PRODUCTOS <span class="text-red-300">MEMORABLES</span>
+              </h1><p class="leading-relaxed opacity-50">
+            ¡En nuestro mundo, los regalos no son solo regalos! Son explosiones de cariño.
+
+
+
+Cada regalo personalizado es una pizca de alegría y un recuerdo que durará para siempre.
+
+
+
+En cada detalle, dejamos toneladas de amor y cariño, creando un ambiente de celebración que hará que la persona que lo reciba se sienta como un rey o una reina.  </p>
+        </div>
+        <div id="pattern" class="px-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          <!-- Utilizando map para mostrar las imágenes -->
+          {imgList.map((img, index) => (
+            <div class="relative overflow-hidden rounded-xl aspect-w-1 aspect-h-1">
+              <img class="object-cover object-center w-full h-full" alt={`img-${index}`} src={img.url_img} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  

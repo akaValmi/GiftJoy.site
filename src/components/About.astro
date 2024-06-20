@@ -1,0 +1,41 @@
+---
+interface InfoAbout {
+  name: string;
+  description: string;
+}
+
+const infoAbout: InfoAbout[] = [
+    
+  { name: 'Gift Joy', description: 'En un mundo donde la personalización y la originalidad son altamente valoradas, la demanda de regalos únicos y significativos está en constante aumento. Con la creciente popularidad de las redes sociales y el comercio electrónico, existe una oportunidad emocionante para establecer una tienda de detalles personalizados que satisfaga las necesidades de un mercado ávido de experiencias de compra únicas y memorables. Gift Joy se centrará en ofrecer una amplia gama de productos únicos, que van desde cajas de madera personalizadas, arreglos florales hasta tazas, camisetas y regalos de cumpleaños, todos ellos cuidadosamente diseñados y personalizados para cada cliente. Con un enfoque en la calidad, la creatividad y la atención al detalle, nuestra tienda se esforzará por superar las expectativas de nuestros clientes y convertir cada compra en una experiencia especial.' },
+  { name: 'Misión', description: 'Convertirnos en el lugar preferido para aquellos que buscan regalos significativos y memorables que reflejen su estilo y personalidad.' },
+  { name: 'Visión', description: 'En Gift Joy, nos comprometemos a proporcionar a nuestros clientes una experiencia de compra excepcional, ofreciendo productos únicos y personalizados que celebren momentos especiales y fortalezcan vínculos emocionales con sus seres queridos.' }
+];
+---
+
+
+
+<style>
+    .purple_border {
+        box-shadow: 4px 4px 1px rgb(254, 240, 138);
+    }
+
+    .black_border {
+        box-shadow: 4px 4px 1px rgb(0, 0, 0);
+    }
+</style>
+
+
+<div class="">
+    <h1 class="flex flex-col items-center mt-12 text-2xl font-bold">¿Quiénes somos?</h1>
+    
+    {infoAbout.map(item => (
+      <div class="relative m-16" >
+        <div class="absolute py-1 px-3 -left-8 -top-2 -rotate-[10deg] border border-black bg-yellow-200 text-gray-800 font-bold">
+          {item.name}
+        </div>
+        <div class="purple_border p-8 border border-black">
+          <p>{item.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>

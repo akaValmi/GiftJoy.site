@@ -1,0 +1,24 @@
+---
+import blogData from "../blogData";
+---
+<div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 justify-center">
+    {blogData.map((blog, index) => (
+      <a href={"/posts/" + blog.slug} class="block w-full">
+        <div class="max-w-xs mx-auto rounded overflow-hidden shadow-lg transition transform hover:scale-105">
+          <div class="relative h-48 overflow-hidden">
+            <img class="absolute h-full w-full object-cover" src={blog.image.url} alt={blog.image.alt}>
+          </div>
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">{blog.title}</div>
+            <p class="text-gray-700 text-base">{blog.description}</p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            {blog.tags.map((tag, tagIndex) => (
+              <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" key={tagIndex}>#{tag}</span>
+            ))}
+          </div>
+        </div>
+      </a>
+    ))}
+  </div>
+  
