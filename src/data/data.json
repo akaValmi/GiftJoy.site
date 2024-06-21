@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "post-1",
+    "title": "Sublimación de Camisetas: Una Guía Completa",
+    "author": "Alumno de Astro",
+    "description": "Aprende todo lo que necesitas saber sobre la sublimación de camisetas.",
+    "image": {
+      "url": "https://th.bing.com/th/id/OIP.zk9b5ERP42s5FYQ4O5cPOwHaHZ?rs=1&pid=ImgDetMain",
+      "alt": "Sublimación de camisetas"
+    },
+    "pubDate": "2024-06-20T00:00:00.000Z",
+    "tags": ["sublimación", "camisetas", "impresión", "personalización"],
+    "content": "Bienvenido a nuestra guía completa sobre la sublimación de camisetas! Si alguna vez te has preguntado cómo puedes personalizar tus camisetas con diseños únicos y duraderos, estás en el lugar correcto. Aquí te explicaremos todo lo que..."
+  },
+  {
+    "slug": "post-2",
+    "title": "Ideas creativas para arreglos personalizados",
+    "author": "Alumno de Astro",
+    "description": "Descubre cómo crear arreglos florales únicos y personalizados.",
+    "image": {
+      "url": "https://i.etsystatic.com/26393746/r/il/e63371/2838131969/il_fullxfull.2838131969_1oyy.jpg",
+      "alt": "Arreglo floral personalizado"
+    },
+    "pubDate": "2023-01-15T00:00:00.000Z",
+    "tags": ["arreglos florales", "decoración", "creatividad", "regalos"],
+    "content": "<Your content here>"
+  },
+  {
+    "slug": "post-3",
+    "title": "Organización exitosa de eventos: consejos clave",
+    "author": "Alumno de Astro",
+    "description": "Descubre cómo planificar y ejecutar eventos memorables.",
+    "image": {
+      "url": "https://th.bing.com/th/id/R.1193d0be594ab4af8a19a4b24a957025?rik=0cWXcLWMp56Vbw&pid=ImgRaw&r=0",
+      "alt": "Organización de eventos"
+    },
+    "pubDate": "2023-02-10T00:00:00.000Z",
+    "tags": ["eventos", "planificación", "organización", "consejos"],
+    "content": "<Your content here>"
+  }
+]

@@ -1,36 +1,49 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+SK:wght@100..400&family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet"></head>
+
 <section class="relative h-96 sm:h-96">
-  <div class="absolute inset-0 bg-cover bg-no-repeat" style="background-image: url('../../public/banner-img.jpg'); filter: blur(5px);"></div>
-
-  <!-- Filtro transparente sobre la imagen de fondo -->
-  <div class="absolute inset-0 bg-black/50 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
-
-  <div class="relative h-full flex flex-col items-center justify-center overflow-hidden">
-
-    
-      <!-- Contenido interno -->
-      <div class="max-w-xl text-center text-white px-4 sm:px-6 fade-in">
-          <h1 class="text-7xl sm:text-9xl slide-in">Gift Joy</h1>
-          <p class="mt-6 max-w-lg sm:text-xl/relaxed text-yellow-100 slide-in">
-              ¡ALEGRÍA EN CADA DETALLE!
-          </p>
-          <div class="mt-8 flex flex-wrap gap-4 justify-center slide-in">
-              <a href="#" class="block w-full rounded bg-yellow-200 px-8 py-3 text-sm font-medium text-black shadow hover:bg-yellow-100 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
-                  Ver catálogo
-              </a>
-          </div>
-      </div>
-
-
-     
-  </div>
-</section>
-
+    <div class="absolute inset-0 bg-cover bg-no-repeat" style="background-image: url('../../public/banner-img.jpg'); filter: blur(5px);"></div>
+  
+    <!-- Filtro transparente sobre la imagen de fondo -->
+    <div class="absolute inset-0 bg-black/50 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+  
+    <div class="relative h-full flex flex-col items-center justify-center overflow-hidden">
+  
+      
+        <!-- Contenido interno -->
+        <div class="max-w-xl text-center text-white px-4 sm:px-6 fade-in">
+            <h1 class="playwrite-sk-unique text-7xl sm:text-7xl mb-12 slide-in">Gift Joy</h1>
+            <p class="mt-6 max-w-lg sm:text-xl/relaxed text-yellow-100 slide-in">
+                ¡ALEGRÍA EN CADA DETALLE!
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4 justify-center slide-in">
+                <a href="#" class="block w-full rounded bg-yellow-200 px-8 py-3 text-sm font-medium text-black shadow hover:bg-yellow-100 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto">
+                    Ver catálogo
+                </a>
+            </div>
+        </div>
+  
+  
+       
+    </div>
+  </section>
+  
 
 
 <style>
   .fade-in {
       animation: fadeIn 1s ease-in-out forwards;
   }
+
+.playwrite-sk-unique {
+  font-family: "Playwrite SK", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 
   .slide-in {
       animation: slideIn 1s ease-in-out forwards;

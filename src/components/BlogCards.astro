@@ -1,9 +1,9 @@
 ---
-import blogData from "../blogData";
+import blogData from "../data/data.json";
 ---
 <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 justify-center">
     {blogData.map((blog, index) => (
-      <a href={"/posts/" + blog.slug} class="block w-full">
+      <a href={"/blog/" + blog.slug} class="block w-full">
         <div class="max-w-xs mx-auto rounded overflow-hidden shadow-lg transition transform hover:scale-105">
           <div class="relative h-48 overflow-hidden">
             <img class="absolute h-full w-full object-cover" src={blog.image.url} alt={blog.image.alt}>

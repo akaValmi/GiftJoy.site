@@ -1,0 +1,64 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import data from '../../data/data.json';
+
+interface PageData {
+    slug: string;
+    title: string;
+    author: string;
+    description: string;
+    image: {
+        url: string;
+        alt: string;
+    };
+    pubDate: string;
+    tags: string[];
+    content: string;
+}
+
+
+export async function getStaticPaths() {
+    const pages: PageData[] = data;
+    return pages.map((page) => (
+        {
+            params: { slug: page.slug}
+            , props: page
+        }
+    ));
+}
+
+const page = Astro.props;
+---
+
+
+
+<Layout title={page.title}>
+
+  <section class="py-12 sm:py-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+              <div class="lg:col-span-2">
+                  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-4">{page.title}</h1>
+                  <p class="text-lg text-gray-700 mb-6">{page.content}</p>
+                  <div class="prose max-w-none text-gray-800">
+                      <astro-inline :html={page.content}></astro-inline>
+                  </div>
+              </div>
+              <div class="lg:col-span-1">
+                  <div class="bg-gray-100 p-4 rounded-lg shadow-md">
+                      <img src={page.image.url} alt={page.image.alt} class="w-full rounded-lg">
+                  </div>
+                  <div class="mt-6">
+                      <h3 class="text-lg font-semibold text-gray-900 mb-2">Tags</h3>
+                      <div class="flex flex-wrap">
+                          {page.tags.map((tag, index) => (
+                              <span key={index} class="bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tag}</span>
+                          ))}
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+</Layout>

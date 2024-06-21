@@ -1,4 +1,4 @@
-export function slugify(text: string): string {
+/* export function slugify(text: string): string {
   return text
     .toString()
     .toLowerCase()
@@ -8,3 +8,4 @@ export function slugify(text: string): string {
     .replace(/^-+/, "")
     .replace(/-+$/, "");
 }
+*/
